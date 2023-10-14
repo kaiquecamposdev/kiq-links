@@ -9,7 +9,7 @@ type Links = {
 export const links: Links[] = [
   {
     Icon: FileText,
-    path: 'https://kaiquecampos.dev',
+    path: 'https://links.kaiquecampos.dev',
     text: 'Portfólio (em construção)',
   },
   {
