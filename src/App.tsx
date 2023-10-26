@@ -25,7 +25,7 @@ export function App() {
 
   return (
     <div className={combinedClasses}>
-      <div className="flex w-full max-w-xl flex-col pt-14">
+      <div className="flex w-full max-w-xl flex-col">
         <Header />
         <div className="flex w-full justify-center">
           <Switch onCheckedChange={() => handleSetTheme()} />
