@@ -1,7 +1,4 @@
-import { BookHeart } from '@/components/BookHeart'
-import { Discord } from '@/components/Discord'
-import { Mail } from '@/components/Mail'
-import { Portfolio } from '@/components/Portfolio'
+import { Discord, ListCheck, Mail, Suitcase } from '@/components/icons';
 
 type Links = {
   Icon: (data: { width: string; height: string }) => JSX.Element
@@ -11,7 +8,7 @@ type Links = {
 
 export const links: Links[] = [
   {
-    Icon: Portfolio,
+    Icon: Suitcase,
     path: 'https://links.kaiquecampos.dev',
     text: 'Portfólio (em construção)',
   },
@@ -26,7 +23,7 @@ export const links: Links[] = [
     text: 'Entre na minha comunidade!',
   },
   {
-    Icon: BookHeart,
+    Icon: ListCheck,
     path: 'https://myanimelist.net/profile/Iam_Kaiqu3',
     text: 'Veja minha lista de animes favoritos!',
   },

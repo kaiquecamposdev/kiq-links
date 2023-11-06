@@ -1,9 +1,4 @@
-import {
-  Github,
-  Instagram,
-  Linkedin,
-  Twitter
-} from '@/components/icons';
+import { Github, Instagram, Linkedin, Twitter } from '@/components/icons';
 
 type Link = {
   path: string
@@ -20,7 +15,7 @@ export const socialLinks: Link[] = [
     Icon: Linkedin,
   },
   {
-    path: 'https://instagram.com/Iam_kaiqu3',
+    path: 'https://instagram.com/iamk_aique',
     Icon: Instagram,
   },
   {

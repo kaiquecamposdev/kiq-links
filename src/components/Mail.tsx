@@ -1,13 +1,13 @@
 export function Mail(data: { width: string; height: string }) {
   return (
     <svg
-      viewBox="0 0 32 32"
+      xmlns="http://www.w3.org/2000/svg"
       width={data.width}
       height={data.height}
-      stroke="currentColor"
       fill="currentColor"
+      viewBox="0 0 512 512"
     >
-      <path d="M28 6H4a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h24a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2Zm-2.2 2L16 14.8 6.2 8ZM4 24V8.9l11.4 7.9a1 1 0 0 0 1.2 0L28 8.9V24Z" />
+      <path d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z" />
     </svg>
   )
 }
