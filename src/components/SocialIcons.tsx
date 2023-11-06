@@ -13,7 +13,9 @@ export function SocialIcons() {
                 rel="noreferrer"
                 className="flex items-center justify-center rounded-full bg-primary/10 p-2 transition-transform hover:scale-[1.1]"
               >
-                <Icon width={24} height={24} className="color-primary" />
+                <i className="color-primary">
+                  <Icon width="24" height="24" />
+                </i>
               </a>
             </li>
           )

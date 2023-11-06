@@ -2,14 +2,12 @@ import {
   Github,
   Instagram,
   Linkedin,
-  LucideIcon,
-  PhoneCall,
-  Twitter,
-} from 'lucide-react'
+  Twitter
+} from '@/components/icons';
 
 type Link = {
   path: string
-  Icon: LucideIcon | string
+  Icon: (data: { width: string; height: string }) => JSX.Element
 }
 
 export const socialLinks: Link[] = [
@@ -28,9 +26,5 @@ export const socialLinks: Link[] = [
   {
     path: 'https://twitter.com/kaiquecamposm',
     Icon: Twitter,
-  },
-  {
-    path: 'tel:+5513991732041',
-    Icon: PhoneCall,
   },
 ]
