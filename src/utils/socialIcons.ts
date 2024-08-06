@@ -1,4 +1,5 @@
-import { Github, Linkedin } from '@/components/icons';
+import { Github } from '@/components/icons/github'
+import { Linkedin } from '@/components/icons/linkedin'
 
 type Link = {
   path: string

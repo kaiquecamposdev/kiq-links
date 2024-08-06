@@ -1,4 +1,5 @@
-import { Discord, ListCheck, Suitcase } from '@/components/icons';
+import { Discord } from '@/components/icons/discord';
+import { ListCheck } from '@/components/icons/list-check';
 
 type Links = {
   Icon: (data: { width: string; height: string }) => JSX.Element
@@ -7,11 +8,6 @@ type Links = {
 }
 
 export const links: Links[] = [
-  {
-    Icon: Suitcase,
-    path: '#',
-    text: 'Portfólio (em construção)',
-  },
   {
     Icon: Discord,
     path: 'https://discord.gg/7e6GYxseBf',

@@ -1,9 +1,11 @@
-import { Links } from '@/components/Links'
-import { SocialIcons } from '@/components/SocialIcons'
+import { Links } from '@/components/links'
+import { SocialIcons } from '@/components/social-icons'
 import { Switch } from '@/components/ui/switch'
+import { Header } from './components/header'
+
 import { useTheme } from '@/contexts/ThemeProvider'
+
 import clsx from 'clsx'
-import { Header } from './components/Header'
 
 export function App() {
   const { setTheme, theme } = useTheme()
@@ -17,19 +19,21 @@ export function App() {
   }
 
   return (
-    <div className={clsx(
-      'flex min-h-screen px-4 justify-center bg-gray-900 bg-cover', 
-      {
-        'bg-[url(./assets/bg-light-desktop.svg)]': theme === 'light',
-        'bg-[url(./assets/bg-dark-desktop.svg)]': theme === 'dark',
-      }
-    )}>
+    <div
+      className={clsx(
+        'flex min-h-screen justify-center bg-gray-900 bg-cover px-4',
+        {
+          'bg-[url(./assets/bg-light-desktop.svg)]': theme === 'light',
+          'bg-[url(./assets/bg-dark-desktop.svg)]': theme === 'dark',
+        },
+      )}
+    >
       <div className="flex w-full max-w-xl flex-col">
         <Header />
-        <div className="flex w-full justify-center py-2">
+        <div className="flex w-full justify-center py-4">
           <Switch onCheckedChange={() => handleSetTheme()} />
         </div>
-        <main className="box-border flex w-full flex-col gap-2 p-6">
+        <main className="box-border flex w-full flex-col gap-2">
           <nav className="flex flex-1">
             <Links />
           </nav>

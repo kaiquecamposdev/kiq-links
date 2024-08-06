@@ -1,9 +1,15 @@
-export function ListCheck(data: { width: string; height: string }) {
+export function ListCheck({
+  width,
+  height,
+}: {
+  width: string
+  height: string
+}) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width={data.width}
-      height={data.height}
+      width={width}
+      height={height}
       fill="currentColor"
       viewBox="0 0 512 512"
     >

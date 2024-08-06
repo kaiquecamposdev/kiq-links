@@ -1,9 +1,9 @@
-export function Github(data: { width: string; height: string }) {
+export function Github({ width, height }: { width: string; height: string }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width={data.width}
-      height={data.height}
+      width={width}
+      height={height}
       fill="currentColor"
       viewBox="0 0 496 512"
     >

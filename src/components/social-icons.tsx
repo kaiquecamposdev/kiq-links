@@ -3,7 +3,7 @@ import { socialLinks } from '@/utils/socialIcons'
 export function SocialIcons() {
   return (
     <>
-      <ul className="flex flex-1 justify-center gap-4 p-6">
+      <ul className="flex flex-1 justify-center gap-4 p-4">
         {socialLinks.map(({ path, Icon }) => {
           return (
             <li key={path} className="flex rounded-lg">
