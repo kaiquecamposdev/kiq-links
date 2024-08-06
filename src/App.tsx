@@ -16,18 +16,17 @@ export function App() {
     }
   }
 
-  const baseClasses =
-    'flex min-h-screen px-4 justify-center bg-gray-900 bg-cover'
-  const combinedClasses = clsx(baseClasses, {
-    'bg-[url(./assets/bg-light-desktop.svg)]': theme === 'light',
-    'bg-[url(./assets/bg-dark-desktop.svg)]': theme === 'dark',
-  })
-
   return (
-    <div className={combinedClasses}>
+    <div className={clsx(
+      'flex min-h-screen px-4 justify-center bg-gray-900 bg-cover', 
+      {
+        'bg-[url(./assets/bg-light-desktop.svg)]': theme === 'light',
+        'bg-[url(./assets/bg-dark-desktop.svg)]': theme === 'dark',
+      }
+    )}>
       <div className="flex w-full max-w-xl flex-col">
         <Header />
-        <div className="flex w-full justify-center">
+        <div className="flex w-full justify-center py-2">
           <Switch onCheckedChange={() => handleSetTheme()} />
         </div>
         <main className="box-border flex w-full flex-col gap-2 p-6">
