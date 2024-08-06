@@ -1,4 +1,4 @@
-import { Discord, ListCheck, Mail, Suitcase } from '@/components/icons';
+import { Discord, ListCheck, Suitcase } from '@/components/icons';
 
 type Links = {
   Icon: (data: { width: string; height: string }) => JSX.Element
@@ -9,13 +9,8 @@ type Links = {
 export const links: Links[] = [
   {
     Icon: Suitcase,
-    path: 'https://links.kaiquecampos.dev',
+    path: '#',
     text: 'Portfólio (em construção)',
-  },
-  {
-    Icon: Mail,
-    path: 'mailto:kaiquedecampos2@gmail.com',
-    text: 'Me envie um email!',
   },
   {
     Icon: Discord,
