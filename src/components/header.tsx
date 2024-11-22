@@ -28,7 +28,7 @@ export function Header() {
         className="max-w-28 max-h-28 rounded-full border-[2px] border-purple-800 transition-transform hover:scale-[1.1]"
       />
       <h2 className="text-center text-lg font-medium leading-relaxed">
-        Tenho {age} ano(s), E sou <strong>Desenvolvedor Web.</strong>
+        Tenho {age} ano(s), sou <strong>Desenvolvedor Web.</strong>
       </h2>
     </header>
   )
